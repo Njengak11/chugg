@@ -15,8 +15,8 @@ class _HomeState extends State<Home> {
     return DefaultTabController(length: 2,
      child:Scaffold(
       appBar: AppBar( 
+        backgroundColor: Colors.yellowAccent[700],
         title:Text('Chugg',
-
         style:GoogleFonts.pacifico(
         fontSize: 30.0,
            color:Colors.white),
@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
 centerTitle:true,
 elevation:0.0,
 bottom: TabBar(
-  indicatorColor: Colors.white,
+  indicatorColor:Colors.white,
   tabs: [
     Tab(
       text:'Info',

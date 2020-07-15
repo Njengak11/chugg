@@ -5,12 +5,15 @@ const History({Key key}) : super(key:key);
 
   @override
   Widget build(BuildContext context) {
-    return  Container(  
-           decoration:BoxDecoration(
-              image:DecorationImage(
-                image:AssetImage('assets/craft.png'),
-              )
-            ) 
+    return  Scaffold(  
+      body: Center(
+        child: Column(
+          mainAxisAlignment:MainAxisAlignment.center,
+          children: <Widget>[
+            Text('Your history')
+          ],
+        ),
+      ),
           );
   }
 }

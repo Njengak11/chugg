@@ -23,8 +23,7 @@ void _incrementCounter() {
   bool showSegmentedControl = true;
   final GlobalKey _fbKey = GlobalKey();
 
-  String _quantity;
-
+ 
   get _formKey => null;
   @override
   Widget build(BuildContext context) {
@@ -73,15 +72,15 @@ void _incrementCounter() {
                        Text(
                          'you have consumed this much',
                          style:GoogleFonts.pacifico(
-                              fontSize: 30.0,
-                              color:Colors.purple),
+                              fontSize: 28.0,
+                              color:Colors.yellowAccent[700]),
                        ),
                            SizedBox(height:30.0),
                         Text(
                          '$_counter', 
                          style:GoogleFonts.pacifico(
                               fontSize: 30.0,
-                              color:Colors.purple),
+                              color:Colors.yellowAccent[700]),
                        ),
                        SizedBox(height:30.0),
                        Center(
@@ -92,7 +91,7 @@ void _incrementCounter() {
                            shape: RoundedRectangleBorder(
                              borderRadius:BorderRadius.circular(50),
                            ),
-                           color: Colors.purple,
+                           color: Colors.yellowAccent[700],
                            onPressed: (){
                            if(_formKey.currentState.validate())
                            {
@@ -118,7 +117,7 @@ void _incrementCounter() {
                             ),
                             floatingActionButton: FloatingActionButton(onPressed: _incrementCounter,
                             tooltip: 'increment',
-                            backgroundColor: Colors.purple,
+                            backgroundColor: Colors.yellowAccent[700],
                             child: Icon(Icons.add),)
                           );
                         }
